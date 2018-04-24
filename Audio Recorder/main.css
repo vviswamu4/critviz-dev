@@ -1,0 +1,56 @@
+
+.custom {
+ 	width: 100px !important;
+}
+
+a{
+ 		color: black;
+ }
+
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active{
+	color: white;
+    background-color: #333;
+} 
+
+  	
+#waveform, #streamWave {
+  /* width: 560px; */
+  width : 100%; 
+  height: 50px;
+  display:inline-block;
+  position: absolute;
+ 
+}
+
+#waveform {
+  z-index: 10;
+  display: none;
+}
+
+#swapContainer {
+  /* width: 560px; */
+  width: 100%; 
+  height: 50px;
+  position: relative;
+}
+  	
+  	
+#timer{
+  		
+  	display: table-cell;
+  	vertical-align: bottom;
+  	  	
+}
+
+ .table.table-borderless td, .table.table-borderless th {
+  		border: 0 !important;
+}
+
+.table.table-borderless {
+  		margin-bottom: 0px;
+  	}

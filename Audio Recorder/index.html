@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>play audio</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="main.css">
+ 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+    <script src="s3Config.js"></script>
+    <script src="getAudio.js"></script>
+    <script src="add_audio.js"></script>
+  </head>
+  <body>  
+	
+    <div class="container">
+    
+    	<div class="row">
+    		<h1>Audio Files</h1>
+    	</div>
+    	
+    	 <div class="row" >
+    	   <table class="table"  style="margin-bottom:0px;">
+    	     
+    	     <tr>
+    	       <td width="170px">
+    	         
+    	         <table class = "table table-borderless ">
+    	           <tr><td style="text-align:center;"><div id="timer" >00:00:00</div></td></tr>
+    	           <tr><td style="text-align:center;"><button class="btn btn-primary custom" id="start" >Start</button></td></tr>
+    	         
+    	         </table>
+    	  
+    	       </td>
+    	       <td >
+    	       
+    	         <div class="row" >
+	    		    <div id="swapContainer">
+				      <div id="streamWave"><canvas class="visualizer" style="width:997px; height:50px"></canvas></div>
+				      <div id="waveform"  style="width:997px; height:50px"></div>
+				    </div>
+			     </div>  
+    	       
+    	       </td>
+    	     </tr>
+    	     
+    	   </table>
+    	 </div>
+    	 <div class="row">
+    	 	<table class="table">
+    	     	<tbody id="audio"></tbody>
+    	     </table>
+    	 </div>
+
+    </div>
+    
+     
+  </body>
+</html>
