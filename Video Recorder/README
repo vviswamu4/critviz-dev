@@ -1,0 +1,9 @@
+This is a web application to record video from browser using WebRTC and send it to Amazon S3 instance.
+The files included are
+
+1. index.html : The main HTML page for the application
+2. main.js : Javascript ile which containe logic to record and play the video files
+3. getVideos.js : Javascript file to query Amazon S3 instance and get video files.
+4. s3Config.js : Javascript file creating S3 instance object to query the bucket
+5. salvattore.js : Open Source Javascript file to render videos as a grid (https://salvattore.js.org/)
+6. main.css : CSS file for the application
