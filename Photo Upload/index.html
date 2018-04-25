@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.12.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+  <div id="container" class="container">
+
+	<h1>Photos</h1>
+	
+	<div id="columns" data-columns="">
+		<div>
+		<div class="row" id="swapContainer">
+	    	<div id="gumDiv"><video id="gum" autoplay muted></video></div>
+	    	<div id="recordedDiv"><canvas id="canvas"></canvas></div>
+		</div>
+	    <div class="row" id="btnDiv" >
+	      <button class="btn btn-warning" id="record">Click!</button>
+	      <br><br>
+	    </div>
+	    </div>
+    </div>
+
+  </div>
+
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="salvattore.js"></script>
+  <script src="s3Config.js"></script>
+  <script src="getPhotos.js"></script>
+  <script src="capture.js"></script>
+
+</body>
+</html>
