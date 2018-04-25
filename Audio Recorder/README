@@ -1,0 +1,7 @@
+This is a web application using WebRTC to record audio from users and store them in an amazon S3 instance.
+The files included are
+
+1. index.html : The main HTML page to render the application.
+2. s3Config.js : Contains configurations to access Amazon S3 instance via javascript.
+3. getAudio.js : Javascript file to list and retrieve audio files stored in the bucket.
+4. add_audio.js : Javascript file to record audio and upload it to S3 instance.
